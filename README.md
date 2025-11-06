@@ -67,6 +67,10 @@ data/
   - Mutual information heatmaps.
 - Summary statistics (mean ± std across seeds) in text files per dataset.
 
+### Pre-trained Models and Results
+Pre-trained models, metrics, and visualizations from training runs are available for download. These can be used to reproduce or analyze results without re-training.
+- β-VAE: https://drive.google.com/file/d/16sRxDmvYtoxv9KT6PM66eKAydmnPmZL4/view?usp=drive_link
+
 ## Project Structure
 - `config.py`: Configuration settings.
 - `datasets.py`: Dataset loading.
