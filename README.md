@@ -13,7 +13,7 @@ This repository implements β-VAE and λβ-VAE models to evaluate disentanglemen
 ## Installation
 
 1. Download and unzip the repository archive from GitHub.
-2. Ensure the `data` folder contains the datasets (included in the archive).
+2. Ensure the `data` folder contains the datasets.
 3. Install dependencies using Python 3.8+:
    ```
    pip install -r requirements.txt
@@ -44,9 +44,9 @@ Customize hyperparameters (e.g., β values, λ values, number of seeds, training
 
 ## Datasets
 We do not redistribute datasets. Please download them from the official sources below and place the files in the in the `data` folder so loaders work correctly.
-- `dsprites_ndarray_co1sh3sc6or40x32y32_64x64.npz`: dSprites (shapes with variations in scale, orientation, position).
+- `dsprites_ndarray_co1sh3sc6or40x32y32_64x64.npz`: dSprites (shapes with variations in shape, scale, orientation, position).
   - Source: https://github.com/deepmind/dsprites-dataset
-- `3dshapes.h5`: Shapes3D (3D shapes with variations in hue, scale, orientation).
+- `3dshapes.h5`: Shapes3D (3D shapes with variations in hue, shape, scale, orientation).
   - Source: https://github.com/deepmind/3d-shapes
 - `mpi3d_real.npz`: MPI3D (realistic 3D objects with variations in color, shape, size, camera position).
   - Source: https://github.com/rr-learning/disentanglement_dataset
@@ -58,8 +58,6 @@ data/
 ├─ 3dshapes.h5
 └─ mpi3d_real.npz
 ```
-
-
 
 ## Results
 - **Metrics**: Reconstruction loss (NLL), KL divergence, L2 loss (for λβ-VAE), MIG, SAP, $I_m$.
@@ -80,7 +78,6 @@ data/
 - `main_beta.py`: Script for β-VAE training and evaluation.
 - `main_lambda.py`: Script for λβ-VAE continuation and evaluation.
 - `requirements.txt`: List of dependencies.
-- `data/`: Pre-downloaded datasets.
 
 ## Acknowledgments
 - Datasets and metrics inspired by the Disentanglement Library: https://github.com/google-research/disentanglement_lib.
