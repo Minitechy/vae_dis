@@ -43,13 +43,23 @@ python main_lambda.py
 Customize hyperparameters (e.g., β values, λ values, number of seeds, training steps) in `config.py`.
 
 ## Datasets
-We do not redistribute datasets. Please download them from the official sources below and place the files in the data/ folder so loaders work correctly.
+We do not redistribute datasets. Please download them from the official sources below and place the files in the in the `data` folder so loaders work correctly.
 - `dsprites_ndarray_co1sh3sc6or40x32y32_64x64.npz`: dSprites (shapes with variations in scale, orientation, position).
   - Source: https://github.com/deepmind/dsprites-dataset
 - `3dshapes.h5`: Shapes3D (3D shapes with variations in hue, scale, orientation).
   - Source: https://github.com/deepmind/3d-shapes
 - `mpi3d_real.npz`: MPI3D (realistic 3D objects with variations in color, shape, size, camera position).
   - Source: https://github.com/rr-learning/disentanglement_dataset
+ 
+Expected layout:
+```text
+data/
+├─ dsprites_ndarray_co1sh3sc6or40x32y32_64x64.npz
+├─ 3dshapes.h5
+└─ mpi3d_real.npz
+```
+
+
 
 ## Results
 - **Metrics**: Reconstruction loss (NLL), KL divergence, L2 loss (for λβ-VAE), MIG, SAP, $I_m$.
