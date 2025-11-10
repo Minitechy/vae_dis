@@ -53,7 +53,7 @@ python main_lambda.py
 ```
 - Results are saved to `./lambda_betavae_results/<dataset>/`.
 - Includes updated models, metrics, visualizations, and summary files.
-- Aggregated heatmaps: `./lambda_betavae_results/percent_change_heatmaps_across_datasets.png`.
+- Aggregated heatmaps: `./lambda_betavae_results/metric_heatmaps_across_datasets.png`.
 
 ### Plotting Interactive Heatmaps
 After running nonlinear experiments, load metrics from .npz files, calculate percentage changes vs. baseline for NLL, SAP, MIG, and $I_m$, and generate static Matplotlib heatmaps showing these changes. Also, create interactive Plotly heatmaps per dataset with a slider to balance reconstruction (NLL) and disentanglement (MIG), highlighting optimal beta-lambda pairs:
