@@ -1,0 +1,14 @@
+# requirements.txt
+ecdsa
+h5py
+imageio
+joblib
+matplotlib
+numpy
+plotly
+scikit-learn
+scipy
+seaborn
+termcolor
+torch
+tqdm
