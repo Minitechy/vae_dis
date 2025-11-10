@@ -6,7 +6,7 @@ This repository implements β-VAE and λβ-VAE models to evaluate disentanglemen
 - **Loss Functions**: β-VAE (reconstruction + β × KL divergence) and λβ-VAE (reconstruction + β × KL divergence + λ × L2 loss).
 - **Datasets**: dSprites, Shapes3D, and MPI3D (included in the `data` folder).
 - **Metrics**: Negative Log-Likelihood (NLL), Mutual Information Gap (MIG), Separated Attribute Predictability (SAP), and $I_m$ score.
-- **Visualizations**: Image reconstruction grids, latent traversal GIFs, mutual information heatmaps, boxplots for β-VAE results, heatmaps for λβ-VAE results (including percentage change heatmaps), and interactive Plotly heatmaps for weighted scores.
+- **Visualizations**: Image reconstruction grids, latent traversal GIFs, mutual information heatmaps, boxplots and heatmaps for all metrics, and interactive Plotly heatmaps for weighted scores.
 - **Reproducibility**: Multi-seed experiments with fixed random seeds.
 
 ## Installation
@@ -89,7 +89,7 @@ data/
   - Original and reconstructed image grids.
   - Latent traversal animations (GIFs).
   - Mutual information heatmaps.
-  - Boxplots and heatmaps for metrics (including percentage changes for NLL, SAP, MIG, $I_m$).
+  - Boxplots and heatmaps for all metrics.
   - Interactive weighted score heatmaps.
 - Summary statistics (mean ± std across seeds) in text files per dataset.
 
