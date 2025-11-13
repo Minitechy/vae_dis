@@ -6,7 +6,7 @@ This repository implements β-VAE and λβ-VAE models to evaluate disentanglemen
 - **Loss Functions**: β-VAE (reconstruction + β × KL divergence) and λβ-VAE (reconstruction + β × KL divergence + λ × L2 loss).
 - **Datasets**: dSprites, Shapes3D, and MPI3D (included in the `data` folder).
 - **Metrics**: Negative Log-Likelihood (NLL), Mutual Information Gap (MIG), Separated Attribute Predictability (SAP), and $I_m$ score.
-- **Visualizations**: Image reconstruction grids, latent traversal GIFs, mutual information heatmaps, boxplots and heatmaps for all metrics, and interactive Plotly heatmaps for weighted scores.
+- **Visualizations**: Image reconstruction grids, latent traversal GIFs, mutual information heatmaps, boxplots and heatmaps for all metrics, and interactive Plotly heatmaps.
 - **Reproducibility**: Multi-seed experiments with fixed random seeds.
 
 ## Installation
@@ -60,7 +60,7 @@ After running nonlinear experiments, load metrics from .npz files, calculate per
 ```
 python interactive_heatmap_visualizer.py
 ```
-- Results are saved to `./lambda_betavae_results/` including "percent_change_heatmaps_across_datasets.png" and HTML files (e.g., `interactive_weighted_score_heatmap_<dataset>.html`).
+- Results are saved to `./lambda_betavae_results/` including "percent_heatmaps_across_datasets.png" and HTML files (e.g., `interactive_tchebycheff_heatmap_<dataset>.html`).
 - Use the slider to adjust weights (0-100% reconstruction weight) and find the best β-λ pair for different priorities.
 - Pre-computed results: Download `interactive_heatmap_results.zip` attached in the repository main.
 
@@ -109,7 +109,7 @@ Pre-trained models, metrics, and visualizations from training runs are available
 - `main_beta.py`: Script for nonlinear β-VAE training and evaluation.
 - `main_lambda.py`: Script for nonlinear λβ-VAE continuation and evaluation.
 - `linear_betavae.py`: Main script for linear β-VAE and λβ-VAE experiments.
-- `interactive_heatmap_visualizer.py`: Script for generating static percentage change heatmaps and interactive Plotly heatmaps per dataset.
+- `interactive_heatmap_visualizer.py`: Script for generating static percentage change heatmaps and interactive Plotly heatmaps.
 - `requirements.txt`: List of dependencies.
 
 ## Acknowledgments
